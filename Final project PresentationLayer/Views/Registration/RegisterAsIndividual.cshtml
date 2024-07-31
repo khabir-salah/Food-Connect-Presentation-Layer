@@ -1,8 +1,9 @@
-﻿@{
+﻿@model Final_project_PresentationLayer.Models.RegisterIndividualViewModel
+
+@{
     Layout = null;
 }
 
-@model Final_project_PresentationLayer.Models.RegisterIndividualViewModel
 <!DOCTYPE html>
 <html lang="en">
 
@@ -91,7 +92,7 @@
             <div class="col-md-6">
                 <div class="registration-form">
                     <h2>Registering As An Individual</h2>
-                    <form asp-action="RegisterIndividual" asp-controller="Registration" method="post">
+                    <form asp-action="RegisterAsIndividual" asp-controller="Registration" method="post">
                         <div class="form-group">
                             <label for="firstName">First Name</label>
                             <input type="text" class="form-control" id="firstName" name="FirstName" required>
